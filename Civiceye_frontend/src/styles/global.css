@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+:root {
+  --primary: #4f46e5;
+  --bg: #121212;
+  --card: #b67878;
+  --text: #1e293b;
+  --border: #bb76b4;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #121212; /* FIXED */
+  color: rgb(231, 220, 220);
+}
+
+/* Navbar Styling */
+.navbar {
+  width: 100%;
+  padding: 12px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #080808;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Form & Card Styling */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 20px;
+}
+
+form {
+  background: rgb(28, 5, 79);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgb(236, 228, 228);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, select, textarea {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background: var(--primary);
+  color: rgb(240, 247, 246);
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Dashboard Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* App Header */
+.app-header {
+  width: 100%;
+  padding: 15px 30px;
+
+  display: flex;
+  align-items: center;
+
+  background: rgba(220, 6, 6, 0.05);
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo Text */
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  background: linear-gradient(135deg, #3b82f6, #0ea5e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.logo-sub {
+  font-size: 0.8rem;
+  color: #aaa;
+  padding-left: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
