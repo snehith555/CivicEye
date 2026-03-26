@@ -57,32 +57,32 @@ User → React Frontend → API Gateway → Microservices → AI Service → Gem
 🧩 Microservices Overview
 --------------------------
 👤 user-service
-  -User registration & login
-  -JWT token generation
-  -Stores user credentials
+  🔹User registration & login
+  🔹JWT token generation
+  🔹Stores user credentials
 📄 report-service
-  -Create complaints
-  -Upload images (stored locally)
-  -Calls AI service
-  -Stores complaint data in MySQL
-  -Admin can update complaint status
+  🔹Create complaints
+  🔹Upload images (stored locally)
+  🔹Calls AI service
+  🔹Stores complaint data in MySQL
+  🔹Admin can update complaint status
 🤖 ai-service
-  -Integrates with Gemini API
-  -Processes:
-  -Complaint description
-  -Optional image (Base64)
-  -Returns:
-  -Category
-  -Priority
-  -Department
-  -Summary
+  🔹Integrates with Gemini API
+  🔹Processes:
+  🔹Complaint description
+  🔹Optional image (Base64)
+  🔹Returns:
+  🔹Category
+  🔹Priority
+  🔹Department
+  🔹Summary
 🌐 api-gateway
-  -Single entry point for frontend
-  -Routes requests to microservices
-  -Integrated with Eureka
+  🔹Single entry point for frontend
+  🔹Routes requests to microservices
+  🔹Integrated with Eureka
 🔍 discovery-server (Eureka)
-  -Registers all services
-  -Enables service-to-service communication
+  🔹Registers all services
+  🔹Enables service-to-service communication
   
 ✨ Features
 ------------
@@ -109,10 +109,12 @@ User → React Frontend → API Gateway → Microservices → AI Service → Gem
   
   ✔ Frontend:
   
-  Login page
-  Register page
-  Complaint submission form
+  🔹Login page
+  🔹Register page
+  🔹Complaint submission form
+  
   ▶️ How to Run the Project
+  ------------------------
   🔧 Prerequisites
   Java 17+
   Node.js
@@ -120,35 +122,35 @@ User → React Frontend → API Gateway → Microservices → AI Service → Gem
   
 🛠️ Backend Setup
 -----------------
-Start MySQL and create database:
+🔹Start MySQL and create database:
   CREATE DATABASE civiceye; 
-Update database credentials in application.yml
+🔹Update database credentials in application.yml
 
 🚀 Start Microservices (Order Important)
-    -Discovery Server (Eureka)
-    -API Gateway
-    -User Service
-    -Report Service
-    -AI Service
+    🔹Discovery Server (Eureka)
+    🔹API Gateway
+    🔹User Service
+    🔹Report Service
+    🔹AI Service
 💻 Frontend Setup
-    -cd Civiceye_frontend
-    -npm install
-    -npm run dev
+    🔹cd Civiceye_frontend
+    🔹npm install
+    🔹npm run dev
 🌐 Default Ports
-    -Service	Port
-    -Eureka Server	8761
-    -API Gateway	8080
-    -User Service	8081
-    -Report Service	8082
-    -AI Service	8083
-    -Frontend (Vite)	5173
+    🔹Service	Port
+    🔹Eureka Server	8761
+    🔹API Gateway	8080
+    🔹User Service	8081
+    🔹Report Service	8082
+    🔹AI Service	8083
+    🔹Frontend (Vite)	5173
 🔄 Application Flow
-    -User submits complaint via frontend
-    -Request goes through API Gateway
-    -Report Service processes complaint
-    -AI Service analyzes using Gemini
-    -Data stored in MySQL
-    -Admin manages complaint status
+    🔹User submits complaint via frontend
+    🔹Request goes through API Gateway
+    🔹Report Service processes complaint
+    🔹AI Service analyzes using Gemini
+    🔹Data stored in MySQL
+    🔹Admin manages complaint status
     
 📌 Current Status
     ✅ Backend fully functional
@@ -157,10 +159,10 @@ Update database credentials in application.yml
     ✅ Basic frontend UI completed
 
 🚀 Future Enhancements
-    -Citizen Dashboard (view complaints)
-    -Admin Dashboard (manage complaints)
-    -Status update UI
-    -Display uploaded images
-    -Advanced UI (cards, filters, navbar)
-    -Notifications system
-    -Map integration for location tracking
+    🔹Citizen Dashboard (view complaints)
+    🔹Admin Dashboard (manage complaints)
+    🔹Status update UI
+    🔹Display uploaded images
+    🔹Advanced UI (cards, filters, navbar)
+    🔹Notifications system
+    🔹Map integration for location tracking
