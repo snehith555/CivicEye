@@ -36,7 +36,6 @@ User → React Frontend → API Gateway → Microservices → AI Service → Gem
 ⚙️ Tech Stack
 --------------
 🔹 Backend
------------
   -Spring Boot (Microservices)
   -Spring Cloud Gateway
   -Spring Security
