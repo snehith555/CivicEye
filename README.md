@@ -57,16 +57,21 @@ User → React Frontend → API Gateway → Microservices → AI Service → Gem
 🧩 Microservices Overview
 --------------------------
 👤 user-service
+
   🔹User registration & login
   🔹JWT token generation
   🔹Stores user credentials
+  
 📄 report-service
+
   🔹Create complaints
   🔹Upload images (stored locally)
   🔹Calls AI service
   🔹Stores complaint data in MySQL
   🔹Admin can update complaint status
+  
 🤖 ai-service
+_______________
   🔹Integrates with Gemini API
   🔹Processes:
   🔹Complaint description
@@ -76,10 +81,12 @@ User → React Frontend → API Gateway → Microservices → AI Service → Gem
   🔹Priority
   🔹Department
   🔹Summary
+  
 🌐 api-gateway
   🔹Single entry point for frontend
   🔹Routes requests to microservices
   🔹Integrated with Eureka
+  
 🔍 discovery-server (Eureka)
   🔹Registers all services
   🔹Enables service-to-service communication
@@ -116,6 +123,7 @@ User → React Frontend → API Gateway → Microservices → AI Service → Gem
   ▶️ How to Run the Project
   ------------------------
   🔧 Prerequisites
+  
   Java 17+
   Node.js
   MySQL
@@ -123,7 +131,9 @@ User → React Frontend → API Gateway → Microservices → AI Service → Gem
 🛠️ Backend Setup
 -----------------
 🔹Start MySQL and create database:
-  CREATE DATABASE civiceye; 
+
+  -CREATE DATABASE civiceye; 
+  
 🔹Update database credentials in application.yml
 
 🚀 Start Microservices (Order Important)
