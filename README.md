@@ -126,15 +126,15 @@ User → React Frontend → API Gateway → Microservices → AI Service → Gem
   ------------------------
   🔧 Prerequisites
   
-   🔹Java 17+
-   🔹Node.js
-   🔹MySQL
+	   🔹Java 17+
+	   🔹Node.js
+	   🔹MySQL
   
 🛠️ Backend Setup
 -----------------
 🔹Start MySQL and create database:
 
-  -CREATE DATABASE civiceye; 
+  	CREATE DATABASE civiceye; 
   
 🔹Update database credentials in application.yml
 
@@ -155,13 +155,13 @@ User → React Frontend → API Gateway → Microservices → AI Service → Gem
 🌐 Default Ports
 
         Service	                   Port
-				--------------------------------
+		--------------------------------
     🔹Eureka Server              	8761
     🔹API Gateway                	8080
     🔹User Service	                8081
-    🔹Report Service	              8082
-    🔹AI Service	                  8083
-    🔹Frontend (Vite)								5173
+    🔹Report Service	            8082
+    🔹AI Service	                8083
+    🔹Frontend (Vite)				5173
 		
 🔄 Application Flow
 
